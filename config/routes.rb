@@ -50,7 +50,9 @@ Jimmydief::Application.routes.draw do
   # just remember to delete public/index.html.
   # root :to => 'welcome#index'
   
+  # Normal pages
   root :to => "landing#index"
+  match "about/" => "landing#about"
 
   # See how all your routes lay out with "rake routes"
 
