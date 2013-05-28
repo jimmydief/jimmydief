@@ -53,6 +53,7 @@ Jimmydief::Application.routes.draw do
   # Normal pages
   root :to => "landing#index"
   match "about/" => "landing#about"
+  match "portfolio/" => "landing#portfolio"
 
   # See how all your routes lay out with "rake routes"
 
