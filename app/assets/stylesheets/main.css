@@ -4,13 +4,14 @@
 	-webkit-box-sizing: border-box;
 }
 
-html, body {
+html {
+  background: url('/assets/layout/cream-dust.png') repeat;
   height: 100%;
 }
 
 body {
+  height: 100%;
 	padding-top: 40px;
-	background: url('/assets/layout/cream-dust.png') repeat;
 }
 
 #page-wrapper {
