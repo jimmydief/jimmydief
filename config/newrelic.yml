@@ -3,9 +3,9 @@
 # Ruby, Java, .NET, PHP, and Python applications with deep visibility and low overhead.
 # For more information, visit www.newrelic.com.
 #
-# Generated June 19, 2013
+# Generated June 22, 2013
 #
-# This configuration file is custom generated for app15845579@heroku.com
+# This configuration file is custom generated for Cal Theta Chi
 
 
 # Here are the settings that are common to all environments
@@ -15,7 +15,7 @@ common: &default_settings
   # You must specify the license key associated with your New Relic
   # account.  This key binds your Agent's data to your account in the
   # New Relic service.
-  license_key: 'd8d771f66a670068097d9ae735f5919df543f7ef'
+  license_key: '6701604bb1ffc2a1c2203e4c9f65166c0c83cf4f'
 
   # Agent Enabled (Ruby/Rails Only)
   # Use this setting to force the agent to run or not run.
@@ -42,7 +42,7 @@ common: &default_settings
   #       - Ajax Service
   #       - All Services
   #
-  app_name: My Application
+  app_name: jimmydief.com
 
   # When "true", the agent collects performance data about your
   # application and reports this data to the New Relic service at
@@ -224,4 +224,4 @@ production:
 staging:
   <<: *default_settings
   monitor_mode: true
-  # app_name: My Application (Staging)
+  # app_name: jimmydief.com (Staging)
