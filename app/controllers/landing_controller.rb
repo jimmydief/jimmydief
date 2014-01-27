@@ -8,14 +8,20 @@ class LandingController < ApplicationController
   
   def about
   
-    # do something
+    # static
+  
+  end
+  
+  def resume
+  
+    # static
   
   end
   
   def portfolio
   
-    # do something else
-  
+    # static
+
   end
 
 end
