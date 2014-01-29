@@ -8,7 +8,6 @@ gem 'rails', '3.2.13'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'pg'
-gem 'thin'
 
 gem 'jquery-rails'
 
@@ -24,6 +23,15 @@ group :assets do
   # gem 'therubyracer', :platforms => :ruby
 
   gem 'uglifier', '>= 1.0.3'
+end
+
+group :development, :test do
+  gem 'thin'
+end
+
+group :production do
+  gem 'unicorn'
+  gem 'rails_12factor'
 end
 
 # To use ActiveModel has_secure_password
