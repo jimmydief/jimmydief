@@ -88,24 +88,6 @@ body {
 	margin-bottom: 10px;
 }
 
-.carousel {
-  min-width: 1000px;
-	margin-bottom: 0;
-}
-
-.carousel-indicators {
-	height: 10px;
-	top: auto;
-	bottom: 10px;
-	right: 50%;
-	margin-right: -22.5px;
-}
-
-.carousel-control {
-	top: 50%;
-	margin-top: -23px;
-}
-
 .lead-picture {
 	float: right;
 	width: 300px;
@@ -116,75 +98,33 @@ body {
   text-align: center;
 }
 
-.carousel #expertise {
-	width: 800px;
-	position: absolute;
-	top: 15px;
-	left: 50%;
-	margin-left: -400px;
-	z-index:1;
+#landing-banner {
+  background: url("http://colourlovers.com.s3.amazonaws.com/images/patterns/591/591654.png?1251789414");
+  background-repeat: repeat;
+  height: 200px;
+  position: relative;
+  box-shadow: 0px 0px 15px black;
+	margin-bottom: 0;
 }
 
-.carousel #expertise h1 {
+#landing-banner #expertise {
+	width: 700px;
+	background: url('/assets/layout/cream-dust.png') repeat;
+	border-radius: 10px;
+	position: absolute;
+	top: 40px;
+	left: 50%;
+	margin-left: -350px;
+}
+
+#landing-banner #expertise h1 {
 	font-family: 'Alegreya SC', serif;
 	text-align: center;
 }
 
-.carousel #expertise p {
+#landing-banner #expertise p {
   font-family: 'Libre Baskerville', serif;
 	text-align: center;
-}
-
-.carousel.carousel-fade .item {
-  -webkit-transition: opacity 2s ease-in-out;
-  -moz-transition: opacity 2s ease-in-out;
-  -ms-transition: opacity 2s ease-in-out;
-  -o-transition: opacity 2s ease-in-out;
-  transition: opacity 2s ease-in-out;
-}
-.carousel.carousel-fade .active.left,
-.carousel.carousel-fade .active.right {
-  left: 0;
-  z-index: 2;
-  opacity: 0;
-}
-.carousel.carousel-fade .next,
-.carousel.carousel-fade .prev {
-  left: 0;
-  z-index: 1;
-}
-
-.carousel.carousel-fade .carousel-control {
-  z-index: 3;
-}
-
-.teaser {
-	height: 125px;
-	position: relative;
-	border: 2px solid black;
-}
-
-.teaser.about {
-	
-}
-
-.teaser.resume {
-	background: url('/assets/photos/keyboard3-small.jpg') no-repeat;
-}
-
-.teaser.portfolio {
-	background: url('/assets/photos/addressbar-small.jpg') no-repeat;
-}
-
-.teaser .caption {
-	width: 296px;
-	background-color: black;
-	position: absolute;
-	bottom: 0;
-	padding: 2px 5px 2px 0;
-	text-align:right;
-	font-size: 16px;
-	color: white;
 }
 
 .btn-portfolio {
