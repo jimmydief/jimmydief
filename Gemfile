@@ -11,8 +11,11 @@ gem 'pg'
 gem 'thin'
 
 gem 'jquery-rails'
-
 gem 'newrelic_rpm'
+
+gem 'actionview-encoded_mail_to' # mailto obfuscation
+# gem 'pg_search' # full-text search for postgres
+# gem 'humanizer' #block comment bots
 
 # Gems used only for assets and not required
 # in production environments by default.
