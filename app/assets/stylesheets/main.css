@@ -174,7 +174,8 @@ body {
   background-color: #3A384E;
 }
 
-#nav-boxes a li:hover {
+#nav-boxes a li:hover,
+#nav-boxes a:focus li {
   background-color: #30252F;
 }
 
@@ -185,7 +186,8 @@ body {
   box-shadow: -1px -1px 1px black;
 }
 
-#nav-boxes a:hover {
+#nav-boxes a:hover,
+#nav-boxes a:focus {
   text-decoration: none;
 }
 
