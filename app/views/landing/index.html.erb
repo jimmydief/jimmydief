@@ -2,17 +2,34 @@
 	<div id="expertise">
 		<h1>James Russell Diefenderfer</h1>
 		<p>A junior student at <strong>UC Berkeley</strong>, majoring in <strong>Electrical Engineering & Computer Science</strong></p>
-		<p>Specializes in <strong>software engineering</strong> and <strong>web development</strong></p>
+		<p>Specializes in <strong>software engineering</strong> and <strong>full-stack web development</strong></p>
 	</div>
 </div>
  
 <div class="container">
   <div class="row">
-    <div class="span8">
-      <h3>Goodbye</h3>
+    <div class="span9">
+      <div class="page-header page-header-condensed">
+        <h2>Hello & Welcome!</h2>
+      </div>
+      <p>My name is James Diefenderfer and this site serves as a gallery of the programming projects that I've completed in the past few years. In the future, I plan to use it more for sharing details of my life and travels.</p>
+      <p>I'm interested in pursing summer internship opportunities in software engineering, preferably in the Bay Area. Most of my experience outside of school has been in web development, beginning with HTML, CSS, and </p>
     </div>
-    <div class="span4">
-      <h3>Hello</h3>
+    <div id="nav-boxes" class="span3">
+      <ul>
+        <li id="intro-portrait">
+          <%= image_tag asset_path("photos/portrait.jpg") %>
+        </li>
+        <%= link_to about_path do %>
+          <li>About Me</li>
+        <% end %>
+        <%= link_to resume_path do %>
+          <li>Resumé</li>
+        <% end %>
+        <%= link_to portfolio_path do %>
+          <li>Portfolio</li>
+        <% end %>
+      </ul>
     </div>
   </div>
 </div> <!-- /container -->

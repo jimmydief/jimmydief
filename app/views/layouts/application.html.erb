@@ -51,10 +51,10 @@
     				<a class="brand" href="/"><img src="<%= asset_path('/layout/JD-Logo-Small.png') %>" alt="JimmyDief.com"></a>
     				<div class="nav-collapse collapse">
     					<ul class="nav nav-pills pull-right">
-    						<li><a href="/"><i class="icon-home"></i> Home</a></li>
-    						<li><a href="/about/"><i class="icon-user"></i> About Me</a></li>
-    						<li><a href="/resume/"><i class="icon-file-alt"></i> Resumé</a></li>
-    						<li><a href="/portfolio/"><i class="icon-folder-open"></i> Portfolio</a></li>
+    						<li><%= link_to root_path do %><i class="icon-home"></i> Home<% end %></li>
+    						<li><%= link_to about_path do %><i class="icon-user"></i> About Me<% end %></li>
+    						<li><%= link_to resume_path do %><i class="icon-file-alt"></i> Resumé<% end %></li>
+    						<li><%= link_to portfolio_path do %><i class="icon-folder-open"></i> Portfolio<% end %></li>
     						<!-- <li><a href="/blog/"><i class="icon-pencil"></i> Blog</a></li> -->
     						<li class="divider-vertical"></li>
     						<li class="social"><a href="http://www.facebook.com/jimmydief" title="Facebook"><i class="icon-facebook"></i></a></li>
@@ -76,8 +76,16 @@
         <p>Designed and built in Berkeley, California</p>
   			<p>All content &copy; 2014 James Russell Diefenderfer. All rights reserved.</p>
   			<ul id="validation">
-  				<li><a href="<%= "http://validator.w3.org/check?uri=http://jimmydief.com" + request.fullpath %>"><img src="<%= asset_path('/validation/validhtml5.png') %>" alt="Valid HTML5"></a></li>
-  				<li><a href="http://jigsaw.w3.org/css-validator/validator?uri=jimmydief.com/main.css"><img src="<%= asset_path('/validation/validcss.png') %>" alt="Valid CSS"></a></li>
+  				<li>
+  				  <%= link_to "http://validator.w3.org/check?uri=http://jimmydief.com" + request.fullpath do %>
+  				    <%= image_tag asset_path('/validation/validhtml5.png'), :alt => "Valid HTML5" %>
+  				  <% end %>  
+  				  </li>
+  				<li>
+  				  <%= link_to "http://jigsaw.w3.org/css-validator/validator?uri=jimmydief.com/main.css" do %>
+  				    <%= image_tag asset_path('/validation/validcss.png'), :alt => "Valid CSS" %>
+  				  <% end %>
+  				</li>
   			</ul>
   		</div> <!-- /container -->
     </footer>
