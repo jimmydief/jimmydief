@@ -19,7 +19,7 @@
     
     <script type="text/javascript">
       $(document).ready(function () {
-        $("ul.nav li a[href='<%= params[:action] != "index" ? "/#{ params[:action] }/" : "/" %>']").parent().addClass('active');
+        $("ul.nav li a[href='<%= params[:action] != "index" ? "/#{ params[:action] }" : "/" %>']").parent("li").addClass('active');
         $("button").tooltip({});
       });
       
