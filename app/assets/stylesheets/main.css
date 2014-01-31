@@ -93,16 +93,12 @@ body {
 
 .lead-picture {
 	float: right;
-	width: 300px;
+	width: 250px;
 	margin: 0 0 20px 20px;
 }
 
 .lead-picture figcaption {
   text-align: center;
-}
-
-.lead-picture-narrow {
-  width: 250px;
 }
 
 #landing-banner {
