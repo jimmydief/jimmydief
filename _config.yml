@@ -1,0 +1,13 @@
+# Site settings
+title: jimmydief.com
+default_page_title: James Russell Diefenderfer
+email: jimmy@jimmydief.com
+description: "My personal website featuring my resumé, portfolio, and blog"
+baseurl: ""
+url: "http://jimmydief.com"
+twitter_username: jimmydief
+github_username:  jimmydief
+
+# Build settings
+markdown: kramdown
+permalink: pretty
